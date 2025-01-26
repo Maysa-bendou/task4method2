@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB8575"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill Informations"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Image Section -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:background="#514141"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/imageView"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginStart="8dp"
+        android:background="#514141"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <!-- Input Fields -->
+    <EditText
+        android:id="@+id/matriculeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="16dp"
+        android:hint="Matricule"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/matriculeInput"
+        android:layout_marginTop="8dp"
+        android:hint="Nom"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/prenomInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameInput"
+        android:layout_marginTop="8dp"
+        android:hint="Prenom"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@android:color/white" />
+
+    <!-- Main Buttons Section -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenomInput"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#783F3F"
+        android:text="Add"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenomInput"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/addButton"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#783F3F"
+        android:text="Delete"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/moreOptionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prenomInput"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#783F3F"
+        android:text="More Options"
+        android:textColor="@android:color/white" />
+
+    <!-- Hidden Buttons Section -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moreOptionsButton"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#783F3F"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moreOptionsButton"
+        android:layout_toEndOf="@id/searchButton"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#783F3F"
+        android:text="Edit"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/afficherToutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moreOptionsButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#783F3F"
+        android:text="display all"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>
